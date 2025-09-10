@@ -1,0 +1,411 @@
+{
+	"info": {
+		"_postman_id": "1d381757-6921-4eb4-9679-06b76d732f08",
+		"name": "Mlaku-mulu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20204010"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get Me",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev_3000}}/employees/me",
+							"host": [
+								"{{dev_3000}}"
+							],
+							"path": [
+								"employees",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Tourists",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{dev_3000}}/employees/tourists",
+							"host": [
+								"{{dev_3000}}"
+							],
+							"path": [
+								"employees",
+								"tourists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{dev_3000}}/employees/users",
+							"host": [
+								"{{dev_3000}}"
+							],
+							"path": [
+								"employees",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Tourist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"tourist02@mlaku.com\",\r\n    \"name\": \"John\",\r\n    \"password\": \"Password123!\",\r\n    \"role\": \"TOURIST\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev_3000}}/employees/tourists",
+							"host": [
+								"{{dev_3000}}"
+							],
+							"path": [
+								"employees",
+								"tourists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Tourist",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"employee@mlaku.com\",\r\n    \"name\": \"Andrew\",\r\n    \"password\": \"Password123!\",\r\n    \"role\": \"EMPLOYEE\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev_3000}}/employees/tourists/1",
+							"host": [
+								"{{dev_3000}}"
+							],
+							"path": [
+								"employees",
+								"tourists",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{dev_3000}}/employees/tourists/4",
+							"host": [
+								"{{dev_3000}}"
+							],
+							"path": [
+								"employees",
+								"tourists",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trips",
+			"item": [
+				{
+					"name": "Get all trips",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev_3000}}/trips/all",
+							"host": [
+								"{{dev_3000}}"
+							],
+							"path": [
+								"trips",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all trips by userId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev_3000}}/trips",
+							"host": [
+								"{{dev_3000}}"
+							],
+							"path": [
+								"trips"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create trip",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"departure\": \"Surabaya\",\r\n    \"destination\": \"Bandung\",\r\n    \"startDate\": \"2024-01-15T10:30:45.123Z\",\r\n    \"endDate\": \"2024-01-16T10:30:45.123Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev_3000}}/trips",
+							"host": [
+								"{{dev_3000}}"
+							],
+							"path": [
+								"trips"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create trip for tourist Id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"departure\": \"Jakarta\",\r\n    \"destination\": \"Bandung\",\r\n    \"startDate\": \"2024-01-15T10:30:45.123Z\",\r\n    \"endDate\": \"2024-01-16T10:30:45.123Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev_3000}}/employees/tourists/2/trips",
+							"host": [
+								"{{dev_3000}}"
+							],
+							"path": [
+								"employees",
+								"tourists",
+								"2",
+								"trips"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update trip",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"departure\": \"Surabaya\",\r\n    \"destination\": \"Jakarta\",\r\n    \"startDate\": \"2024-01-15T10:30:45.123Z\",\r\n    \"endDate\": \"2024-01-16T10:30:45.123Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev_3000}}/employees/trips/5",
+							"host": [
+								"{{dev_3000}}"
+							],
+							"path": [
+								"employees",
+								"trips",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete trip",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{dev_3000}}/employees/trips/5",
+							"host": [
+								"{{dev_3000}}"
+							],
+							"path": [
+								"employees",
+								"trips",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json();\r",
+							"if (res.access_token) {\r",
+							"  pm.environment.set(\"tokenMlakuMulu\", res.access_token);\r",
+							"}\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"employee@mlaku.com\", // // tourist01@mlaku.com, employee@mlaku.com\r\n    \"password\": \"Password123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{dev_3000}}/auth/login",
+					"host": [
+						"{{dev_3000}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"tourist01@mlaku.com\",\r\n    \"name\": \"Jhon\",\r\n    \"password\": \"Password123!\",\r\n    \"role\": \"TOURIST\" // EMPLOYEE, TOURIST\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{dev_3000}}/auth/register",
+					"host": [
+						"{{dev_3000}}"
+					],
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{tokenMlakuMulu}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
