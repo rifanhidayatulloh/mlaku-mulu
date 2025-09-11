@@ -15,9 +15,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{dev_3000}}/employees/me",
+							"raw": "https://rifanhidayatulloh.web.id/employees/me",
+							"protocol": "https",
 							"host": [
-								"{{dev_3000}}"
+								"rifanhidayatulloh",
+								"web",
+								"id"
 							],
 							"path": [
 								"employees",
@@ -40,9 +43,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{dev_3000}}/employees/tourists",
+							"raw": "https://rifanhidayatulloh.web.id/employees/tourists",
+							"protocol": "https",
 							"host": [
-								"{{dev_3000}}"
+								"rifanhidayatulloh",
+								"web",
+								"id"
 							],
 							"path": [
 								"employees",
@@ -65,9 +71,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{dev_3000}}/employees/users",
+							"raw": "https://rifanhidayatulloh.web.id/employees/users",
+							"protocol": "https",
 							"host": [
-								"{{dev_3000}}"
+								"rifanhidayatulloh",
+								"web",
+								"id"
 							],
 							"path": [
 								"employees",
@@ -92,9 +101,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{dev_3000}}/employees/tourists",
+							"raw": "https://rifanhidayatulloh.web.id/employees/tourists",
+							"protocol": "https",
 							"host": [
-								"{{dev_3000}}"
+								"rifanhidayatulloh",
+								"web",
+								"id"
 							],
 							"path": [
 								"employees",
@@ -119,9 +131,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{dev_3000}}/employees/tourists/1",
+							"raw": "https://rifanhidayatulloh.web.id/employees/tourists/1",
+							"protocol": "https",
 							"host": [
-								"{{dev_3000}}"
+								"rifanhidayatulloh",
+								"web",
+								"id"
 							],
 							"path": [
 								"employees",
@@ -138,9 +153,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{dev_3000}}/employees/tourists/4",
+							"raw": "https://rifanhidayatulloh.web.id/employees/tourists/4",
+							"protocol": "https",
 							"host": [
-								"{{dev_3000}}"
+								"rifanhidayatulloh",
+								"web",
+								"id"
 							],
 							"path": [
 								"employees",
@@ -162,9 +180,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{dev_3000}}/trips/all",
+							"raw": "https://rifanhidayatulloh.web.id/trips/all",
+							"protocol": "https",
 							"host": [
-								"{{dev_3000}}"
+								"rifanhidayatulloh",
+								"web",
+								"id"
 							],
 							"path": [
 								"trips",
@@ -180,9 +201,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{dev_3000}}/trips",
+							"raw": "https://rifanhidayatulloh.web.id/trips",
+							"protocol": "https",
 							"host": [
-								"{{dev_3000}}"
+								"rifanhidayatulloh",
+								"web",
+								"id"
 							],
 							"path": [
 								"trips"
@@ -206,9 +230,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{dev_3000}}/trips",
+							"raw": "https://rifanhidayatulloh.web.id/trips",
+							"protocol": "https",
 							"host": [
-								"{{dev_3000}}"
+								"rifanhidayatulloh",
+								"web",
+								"id"
 							],
 							"path": [
 								"trips"
@@ -232,9 +259,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{dev_3000}}/employees/tourists/2/trips",
+							"raw": "https://rifanhidayatulloh.web.id/employees/tourists/2/trips",
+							"protocol": "https",
 							"host": [
-								"{{dev_3000}}"
+								"rifanhidayatulloh",
+								"web",
+								"id"
 							],
 							"path": [
 								"employees",
@@ -261,9 +291,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{dev_3000}}/employees/trips/5",
+							"raw": "https://rifanhidayatulloh.web.id/employees/trips/5",
+							"protocol": "https",
 							"host": [
-								"{{dev_3000}}"
+								"rifanhidayatulloh",
+								"web",
+								"id"
 							],
 							"path": [
 								"employees",
@@ -280,9 +313,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{dev_3000}}/employees/trips/5",
+							"raw": "https://rifanhidayatulloh.web.id/employees/trips/5",
+							"protocol": "https",
 							"host": [
-								"{{dev_3000}}"
+								"rifanhidayatulloh",
+								"web",
+								"id"
 							],
 							"path": [
 								"employees",
@@ -328,7 +364,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"employee@mlaku.com\", // // tourist01@mlaku.com, employee@mlaku.com\r\n    \"password\": \"Password123!\"\r\n}",
+					"raw": "{\r\n    \"email\": \"tourist01@mlaku.com\", // // tourist01@mlaku.com, employee@mlaku.com\r\n    \"password\": \"Password123!\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -336,9 +372,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{dev_3000}}/auth/login",
+					"raw": "https://rifanhidayatulloh.web.id/auth/login",
+					"protocol": "https",
 					"host": [
-						"{{dev_3000}}"
+						"rifanhidayatulloh",
+						"web",
+						"id"
 					],
 					"path": [
 						"auth",
@@ -355,7 +394,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"tourist01@mlaku.com\",\r\n    \"name\": \"Jhon\",\r\n    \"password\": \"Password123!\",\r\n    \"role\": \"TOURIST\" // EMPLOYEE, TOURIST\r\n}",
+					"raw": "{\r\n    \"email\": \"employee@mlaku.com\",\r\n    \"name\": \"Andrew\",\r\n    \"password\": \"Password123!\",\r\n    \"role\": \"EMPLOYEE\" // EMPLOYEE, TOURIST\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -363,9 +402,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{dev_3000}}/auth/register",
+					"raw": "https://rifanhidayatulloh.web.id/auth/register",
+					"protocol": "https",
 					"host": [
-						"{{dev_3000}}"
+						"rifanhidayatulloh",
+						"web",
+						"id"
 					],
 					"path": [
 						"auth",
