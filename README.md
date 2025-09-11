@@ -1,4 +1,4 @@
-# Mlaku-mulu (NestJS + TypeORM + MySQL)
+# Mlaku-mulu (NestJS + TypeORM + PostgreSQL)
 
 A backend API to manage tourists and their trips for a travel bureau. Includes:
 
@@ -14,7 +14,7 @@ A backend API to manage tourists and their trips for a travel bureau. Includes:
 ```bash
 npm i
 cp .env.example .env
-# edit .env to your MySQL credentials
+# edit .env to your PostgreSQL credentials
 ```
 
 2. **Start**
